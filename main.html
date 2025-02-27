@@ -1,95 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: white;
-        }
+	<style> 
+		.demo {
 
-        .container {
-            position: relative;
-            display: inline-block;
-            padding: 20px;
-            background-color: white;
-            border: 1px solid black;
-        }
+		width:300px;
 
-        .box {
-            width: 300px;
-            background-color: lightblue;
-            border: 15px solid blue;
-            padding: 50px;
-            margin: 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            position: relative;
-        }
+		background-color:lightblue;
 
-        /* Labels */
-        .label {
-            position: absolute;
-            background-color: white;
-            padding: 2px 5px;
-            font-size: 14px;
-            border: 1px solid black;
-            font-weight: bold;
-        }
+		border:15px solid blue;
 
-        .margin-label {
-            top: -25px;
-            left: 10px;
-        }
+		padding:50px;
 
-        .border-label {
-            top: -25px;
-            left: 120px;
-        }
+		margin:20px;
 
-        .padding-label {
-            top: 10px;
-            left: -80px;
-        }
+		}
 
-        .color-label {
-            top: 10px;
-            right: -80px;
-        }
+	</style>
 
-        .width-label {
-            bottom: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+	<link rel="stylesheet" href="styles.css">
 
-        /* Dotted border inside */
-        .inner-box {
-            border: 2px dashed black;
-            padding: 10px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <span class="label margin-label">margin 20px</span>
-        <span class="label border-label">border 15px solid blue</span>
-        <span class="label padding-label">padding 50px</span>
-        <span class="label color-label">color lightblue</span>
-        <div class="box">
-            <div class="inner-box">
-                This is a demo of box model try to replicate 
-                this box model in Html and Css and try 
-                to pass all the test cases.
-            </div>
-        </div>
-        <span class="label width-label">width 300px</span>
-    </div>
+	<div class="demo">
+
+		This is a demo of box model try to replicate this box model in Html and Css and try to pass all the test cases.
+
+	</div><!-- the entire body must be written by student -->
+
+    <script type="text/javascript" src="./script.js">
+</script>
 </body>
 </html>
 
